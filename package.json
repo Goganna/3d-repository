@@ -1,0 +1,16 @@
+{
+  "name": "3d-repository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp html",
+    "scripts":"gulp js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anna Horb",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-terser": "^2.1.0"
+  }
+}
