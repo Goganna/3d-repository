@@ -1,18 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>`3D Printer</title>
 </head>
 <body>
-    <header> gulp test</header>
-    <main>
-        <h1>hello gulp</h1>
-        <img src="img/printer.png" alt="">
-    </main>
-    <footer></footer>
-    <script src="/source/js/script.js"></script>
+    <div class="wrapper"> 
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="logo-container">
+                    <a class="logo" href="index.html">
+                        <img class="logo__image" src="img/logo.svg" alt="logo" width="110" height="31">
+                    </a>
+                    <div class="menu menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>                     
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    <span>3D-печать</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    3D-моделирование
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                <span>Контакты</span> 
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item--price">
+                                <a class="menu__link menu__link--price" name="calculator" href="#">
+                                    <span class="">Рассчитать стоимость</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> 
+                <section class="welcome-section">
+                    <div class="welcome-section__container">              
+                        <div class="welcome-section__benefits benefits">
+                             <h1 class="welcome-section__title"><span class="services">Услуги</span> <span class="title__3d">  3D</span>-печати
+                             </h1>                     
+                             <div class="benefits__block">
+                                 <ul class="benefits__list">
+                                     <li class="benefits__item">
+                                         Используем готовую модель или поможем с проектированием
+                                     </li>
+                                     <li class="benefits__item">
+                                         Производим как единичные экземпляры, так и выпускаем тиражи
+                                     </li>
+                                     <li class="benefits__item">
+                                         Печатаем по технологии FDM и SLA
+                                    </li>
+                                 </ul>    
+                             </div>
+                         </div>
+                         <div class="welcome-section__img"></div>
+                     </div>
+                </section>                           
+            </div>  
+        </header>
+        <main class="main"> 
+            <div class="main-wrapper ">      
+                <section class="make">
+                    <h2 class="make__title">Изготовим что угодно</h2>
+                    <div class="make__grid"></div>
+                        <div class="make__block">
+                            <p class="make__block--title">Промышленные прототипы</p>
+                            <p class="make__block--text" >Для испытания образцов перед началом производства</p>
+                        </div>
+                        <div class="make__block">                            
+                            <p class="make__block--title">Архитектурные макеты</p>
+                            <p class="make__block--text">Для наглядной презентации ваших проектов</p>
+                        </div>
+                        <div class="make__block">                            
+                            <p class="make__block--title">Ювелирные изделия</p>
+                            <p class="make__block--text" >Для придания индивидуального стиля</p>
+                        </div>
+                        <div class="make__block">                            
+                            <p class="make__block--title">Скульптуры</p>
+                            <p class="make__block--text" >Для творческой декорации интерьера</p>
+                        </div>
+                        <div class="make__block">                            
+                            <p class="make__block--title">Инженерные детали</p>
+                            <p class="make__block--text">Для воплощения в жизнь смелых идей</p>
+                        </div>
+                        <div class="make__block">                            
+                            <p class="make__block--title">Презентационные макеты</p>
+                            <p class="make__block--text">Для демонстрации на выставках или на витринах</p>
+                        </div>
+                        <div class="make__block">                            
+                            <p class="make__block--title">Медицинские и образовательные модели</p>
+                            <p class="make__block--text">Для использования в качестве учебных пособий</p>
+                        </div>
+                        <div class="make__block">                            
+                            <p class="make__block--title">Автозапчасти</p>
+                            <p class="make__block--text">Для замены редких или снятых с производства деталей</p>
+                        </div>
+                        <div class="make__block">                            
+                            <p class="make__block--title">Сувенирная продукция</p>
+                            <p class="make__block--text">Для создания необычных и запоминающихся даров</p>
+                        </div>                        
+                </section>
+                 <section class="work">
+                    <h2 class="work__title">Как мы работаем </h2>
+                    <div class="work__stages">
+                        <div class="foto-work">
+                            <img src="img/work.png" alt="Как мы работаем " width="727.62px" height="626px">
+                        </div>
+                        <div class="work__stages--paragraph">
+                            <p class="work__stages--stage">Составление заявки на просчёт стоимости и сроков</p>
+                            <p class="work__stages--stage">Предоплата работы</p>
+                            <p class="work__stages--stage">Создание и согласование 3D-модели</p>
+                            <p class="work__stages--stage">Предоплата работы</p>
+                            <p class="work__stages--stage">Отправка клиенту после оплаты остатка</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <p><a href="#calculator"></a></p>
+                    <h2 class="price__title">Рассчитать стоимость <span class="title__3d title__3d--price">  3D</span>-печати</h2>           
+                    <div class="price__matirials">
+                        <a class="matirials" href="#">Материалы</a>
+                        <a class="printers" href="#">Принтеры</a> 
+                        <div class="price__info">
+                            <button class="accordion">ABS PRO (FDM)</button>
+                            <div class="panel">
+                              <p class="panel__text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                            </div>
+                        </div>
+                        <div class="price__info">
+                           <button class="accordion">PLA (FDM)</button>
+                            <div class="panel">
+                              <p class="panel__text">Lorem ipsum...</p>
+                            </div>
+                        </div>
+                        <div class="price__info">
+                            <button class="accordion">ELASTAN (FDM)</button>
+                            <div class="panel">
+                              <p class="panel__text">Lorem ipsum...</p>
+                            </div>
+                        </div>
+                        <div class="price__info">
+                            <button class="accordion">COPET (FDM)</button>
+                            <div class="panel">
+                              <p class="panel__text">Lorem ipsum...</p>
+                            </div>
+                        </div>
+                        <div class="price__info">
+                            <button class="accordion">NYLON CARBON (FDM)</button>
+                            <div class="panel">
+                              <p class="panel__text">Lorem ipsum...</p>
+                            </div>
+                        </div>
+                        <div class="price__info">
+                            <button class="accordion">TANGO (POLYJET)</button>
+                            <div class="panel">
+                              <p class="panel__text">Lorem ipsum...</p>
+                            </div>
+                        </div>
+                        <div class="price__info">
+                            <button class="accordion">VERO WHITE (POLYJET</button>
+                            <div class="panel">
+                              <p class="panel__text">Lorem ipsum...</p>
+                            </div>
+                        </div>
+                        <div class="price__info">
+                            <button class="accordion">VERO CLEAR (POLYJET)</button>
+                            <div class="panel">
+                              <p class="panel__text">Lorem ipsum...</p>
+                            </div>
+                        </div>
+                    </div>                                    
+                </section>
+                <section>
+                    <h4>Шаг 1 из 3</h4>
+                    <p>Кликните, чтобы прикрепить 3D модель или фото</p>
+                    <p>Допустимые расширения:</p>
+                    <p>.jpg, .jpeg, .png, .gif, .pdf, .psd, .ai, .max, .cdr, .3ds, .stl, .igs, .model, .mxp, .obj, .wrl, .3dm, .fbx, .matpart, .matamx, .zip, .rar, .7z, .skp, .dae, .ply, .magics, .mgx, .x3d, .x3dv, .3mf, .stp, .step, .prt, .zpr</p>
+                    <p>Максимальный размер файла:<span>10 Мб</span></p>
+                    <p>Или добавьте ссылку на макет в облаке (Dropbox, Mega, Google Drive и т.п.)</p>
+                    <button>Назад</button>
+                    <button>Далее</button>
+                </section>
+                <section>
+                    <h2>Остались вопросы?</h2>
+                    <p>Оформите заявку на сайте и мы свяжемся с вами в ближайшее время.</p>
+                    <form class="">
+                        <div class="">
+                            <label for="name" class="">Имя</label>
+                            <input type="text" name="username" id="name" placeholder="Дмитрий" required>
+                        </div>
+                        <div class="">
+                            <label for="usernumber" class=""></label>
+                            <input type="text" name="usernumber" id="number" placeholder="Ваш телефон" required>
+                        </div>
+                        <div class="">
+                            <label for="question" class=""> </label>
+                            <input type="text" name="question" id="question" placeholder="Ваш вопрос" required>
+                        </div>
+                        <button class="" type="submit">Отправить</button> 
+                    </form>
+                    <p>Нажимая на кнопку, вы соглашаетесь с <a>Политикой конфиденциальности</a></p>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <div class="container">
+                    <a class="logo-link" href="index.html">
+                        <div class="logo">
+                            <img class="logo logo-img" src="img/logo.svg" alt="logo" width="110" height="31">
+                        </div>
+                    </a>
+                    <nav class="nav">
+                        <ul class="list-body">
+                            <li class="nav-item">
+                                <a class="active active-header" href="index.html">
+                                    <span>3D-печать</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html">
+                                    <span>3D-моделирование</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="project.html">
+                                    <span>Контакты</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <div>
+                        <a class="" href="tel:+380979999999">
+                            <span class="tel">+38 (097) 999-99-99</span>
+                        </a>
+                        <address>г. Киев, ул. Гагарина 25/68</address>
+                        <a class="" href="mailto:pochta@gmail.com">
+                        <span>pochta@gmail.com</span>
+                        </a>                        
+                        <a href="#">youtube</a>
+                        <a href="#">facebook</a>
+                    </div>
+                </div> 
+                <div>
+                    <p>@2021. Все права защищены</p>
+                    <p>Сделано в Webnauts c </p>
+                </div> 
+             </div>
+
+        </footer>
+    </div>
+    <script src="js/script.min.js"></script>
 </body>
 </html>

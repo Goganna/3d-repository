@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "gulp",
+    "start": "gulp start",
     "scripts": "gulp js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,7 @@
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",

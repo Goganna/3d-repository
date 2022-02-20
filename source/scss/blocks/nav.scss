@@ -1,0 +1,187 @@
+@media (max-width:768px) {
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+   /* Гамбургер иконка */
+.menu__btn {
+	width: 44px;
+    height: 44px;
+    position: relative;
+    z-index:2;
+    overflow: hidden;
+    background-color: #FB8C00;
+    border-radius: 50%;
+        & span {
+            width: 26px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            transition: all 0.5s;
+            }
+        & span:nth-of-type(2) {
+            top: calc(50% - 5px);
+            }
+        & span:nth-of-type(3) {
+            top: calc(50% + 5px);
+            }
+            
+/* Меняем гамбургер иконку, когда меню открыто */
+        &.active span:nth-of-type(1) {
+            display: none;  
+            }          
+        &.active span:nth-of-type(2) {
+            top: 50%;
+            transform: translate(-50%, 0%) rotate(45deg);  
+            }
+        &.active span:nth-of-type(3) {
+            top: 50%;
+            transform: translate(-50%, 0%) rotate(-45deg); 
+            }        
+}
+/* Меню, которое будет появляться */
+.menu__body {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*padding: 15px;*/
+    background: rgba(221, 235, 240, 0.9);        
+    transform: translateX(-100%);
+    transition: transform 0.5s;  
+        &.active {
+            transform: translateX(0);
+        }
+        & li {
+            list-style-type: none;
+        }
+    }
+.menu__list {
+    width: 285px;
+    height: 343px;
+    background-color: white;
+    border-bottom-right-radius: 30px;
+    }
+.menu__item {
+    margin-bottom: 24px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px; 
+} 
+.menu__item:nth-of-type(1) {
+    margin-top: 0;
+    padding-top: 50px;    
+}
+.menu__item:nth-of-type(3) {
+    margin-bottom: 29px;
+    padding-bottom: 79px;
+    border-bottom: 1px solid rgba(180, 187, 206, 0.3);
+    width: 255px;   
+}
+.menu__item--price {
+    line-height: 140%;  
+    margin-top: 15px;
+    display: block;
+    background: #FB8C00;
+    border-radius: 88px;
+    width: 256px;
+    height: 48px;    
+    text-align: center;
+}
+.menu__item--price:hover {
+    background: #2F80ED;
+}
+.menu__link:hover {
+    color: #FB8C00;
+    text-decoration: underline;
+}
+.menu__link--price span {
+    position: relative;
+    display: inline-block;
+    padding-top: 13px;
+    color: white;
+}
+.menu__link--price::before {
+        position: absolute;
+        content: '';
+        background-image: url('../../img/calculator.svg');
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 13.33px;
+        margin-top: 17px;
+        margin-left: -19px;
+    }
+}
+@media (min-width:769px) {
+    .menu__btn {
+        display: none;
+    }
+    .logo-container {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+    }
+    .menu__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+     .menu__link {    
+         position: relative;
+         padding: 15px 0;
+         align-self: center;
+         font-weight: bold;
+         font-size: 16px;
+         line-height: 19px;
+         color: #2C2F36;
+     }
+    .menu__item {
+        /* margin-top: 39px; */
+         margin-right: 72px;
+     } 
+     .menu__item:nth-of-type(4) {
+        margin-right: 0; 
+    }   
+    .menu__item--price {
+        line-height: 140%;  
+        /*margin-top: 15px;*/
+        display: block;
+        background: #FB8C00;
+        border-radius: 88px;
+        width: 256px;
+        height: 48px;    
+        text-align: center;
+    }
+    .menu__item--price:hover {
+        background: #2F80ED;
+    }
+    .menu__link:hover {
+        color: #FB8C00;
+        text-decoration: underline;
+    }
+    .menu__link--price span {
+        display: inline-block;
+        padding-top: 13px;
+        color: white;
+    }
+    .menu__link--price::before {
+        position: absolute;
+        content: '';
+        background-image: url('../../img/calculator.svg');
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 13.33px;
+        margin-top: 17px;
+        margin-left: -19px;
+    }
+}
+

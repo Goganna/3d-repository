@@ -1,0 +1,38 @@
+@media (max-width:768px) {
+
+    .header {
+        width: 100%;
+        /*display: flex;*/
+        justify-content: flex-end;
+
+            &__wrapper {
+                width: 100%;
+                margin: 0 auto;
+                /*display: flex;*/
+                padding: 15px;
+                align-items: center;
+                /*justify-content: space-between;*/
+                background-image: url('../../img/bg-mobil.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 386px;
+                max-height: 1275px;
+            }
+    }
+}
+
+@media (min-width:769px) {
+    .header__wrapper {
+        width: 100%; 
+        max-width: 1600px;
+        min-height: 940px;
+        margin: 0 auto;
+        padding: 0 150px;   
+        background-image: url('../../img/background.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #2C2F36;
+    } 
+}
+
+
