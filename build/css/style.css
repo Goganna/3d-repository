@@ -891,3 +891,120 @@ img {
     color: #2F80ED;
   }
 }
+@media (min-width: 769px) {
+  .steps {
+    width: 100%;
+  }
+
+  .order {
+    padding: 44px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 68px rgba(33, 33, 33, 0.06);
+    border-radius: 35px;
+  }
+  .order__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 32px;
+  }
+  .order__indicates {
+    text-align: left;
+  }
+  .order__indicates--step {
+    position: relative;
+    height: 4px;
+    width: 89px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    background: #B4BBCE;
+    opacity: 0.3;
+    border-radius: 38px;
+    border: none;
+    display: inline-block;
+  }
+  .order__indicates--step:nth-child(2)::before, .order__indicates--step:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background: #B4BBCE;
+    border-radius: 38px;
+  }
+  .order__indicates--stepp:nth-child(2)::before {
+    left: -11px;
+  }
+  .order__indicates--step:nth-child(2)::after {
+    left: 96px;
+  }
+  .order__indicates--step.active {
+    background: #FB8C00;
+  }
+  .order-layout__label {
+    width: 298px;
+    border: 3px dashed #B4BBCE;
+    border-radius: 7px;
+    display: block;
+    padding: 1.2em;
+    transition: border 300ms ease;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .order-layout__title {
+    position: relative;
+    height: 66px;
+    width: 177px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 24px 55px 24px 66px;
+  }
+  .order-layout__title::before {
+    content: "";
+    background-image: url("../../img/download.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 22px;
+    height: 20px;
+    left: 1px;
+  }
+  .order-layout__input {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
+.example-1 .label {
+  width: 120px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  display: block;
+  padding: 1.2em;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.example-1 .label i {
+  display: block;
+  font-size: 42px;
+  padding-bottom: 16px;
+}
+
+.example-1 .label i, .example-1 .label .title {
+  color: grey;
+  transition: 200ms color;
+}
+
+.example-1 .label:hover {
+  border: 2px solid #000;
+}
+
+.example-1 .label:hover i, .example-1 .label:hover .title {
+  color: #000;
+}
