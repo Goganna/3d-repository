@@ -38,7 +38,7 @@
                                 </a>
                             </li>
                             <li class="menu__item menu__item--price">
-                                <a class="menu__link menu__link--price" name="calculator" href="#">
+                                <a class="menu__link menu__link--price" href="#calculator">
                                     <span class="">Рассчитать стоимость</span>
                                 </a>
                             </li>
@@ -129,70 +129,90 @@
                     </div>
                 </section>
                 <section class="price">
-                    <p><a href="#calculator"></a></p>
+                    <p><a name="calculator"></a></p>
                     <h2 class="price__title">Рассчитать стоимость <span class="title__3d title__3d--price">  3D</span>-печати</h2>           
                     <div class="price__matirials">
-                        <a class="matirials" href="#">Материалы</a>
-                        <a class="printers" href="#">Принтеры</a> 
-                        <div class="price__info">
-                            <button class="accordion">ABS PRO (FDM)</button>
-                            <div class="panel">
-                              <p class="panel__text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
-                            </div>
+                        <div class="price__matirials-block">
+                            <a class="matirials" href="#">Материалы</a>
+                            <a class="printers" href="#">Принтеры</a> 
                         </div>
-                        <div class="price__info">
-                           <button class="accordion">PLA (FDM)</button>
-                            <div class="panel">
-                              <p class="panel__text">Lorem ipsum...</p>
-                            </div>
-                        </div>
-                        <div class="price__info">
-                            <button class="accordion">ELASTAN (FDM)</button>
-                            <div class="panel">
-                              <p class="panel__text">Lorem ipsum...</p>
-                            </div>
-                        </div>
-                        <div class="price__info">
-                            <button class="accordion">COPET (FDM)</button>
-                            <div class="panel">
-                              <p class="panel__text">Lorem ipsum...</p>
-                            </div>
-                        </div>
-                        <div class="price__info">
-                            <button class="accordion">NYLON CARBON (FDM)</button>
-                            <div class="panel">
-                              <p class="panel__text">Lorem ipsum...</p>
-                            </div>
-                        </div>
-                        <div class="price__info">
-                            <button class="accordion">TANGO (POLYJET)</button>
-                            <div class="panel">
-                              <p class="panel__text">Lorem ipsum...</p>
-                            </div>
-                        </div>
-                        <div class="price__info">
-                            <button class="accordion">VERO WHITE (POLYJET</button>
-                            <div class="panel">
-                              <p class="panel__text">Lorem ipsum...</p>
-                            </div>
-                        </div>
-                        <div class="price__info">
-                            <button class="accordion">VERO CLEAR (POLYJET)</button>
-                            <div class="panel">
-                              <p class="panel__text">Lorem ipsum...</p>
-                            </div>
-                        </div>
-                    </div>                                    
+                        <details class="price__info">
+                            <summary class="price__info--title">ABS PRO (FDM)</summary>
+                            <p class="price__info--text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                        </details>
+                        <details class="price__info">
+                            <summary class="price__info--title">PLA (FDM)</summary>
+                            <p class="price__info--text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                        </details>
+                        <details class="price__info">
+                            <summary class="price__info--title">ELASTAN (FDM)</summary>
+                            <p class="price__info--text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                        </details> 
+                        <details class="price__info">
+                            <summary class="price__info--title">COPET (FDM)</summary>
+                            <p class="price__info--text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                        </details>
+                        <details class="price__info">
+                            <summary class="price__info--title">NYLON CARBON (FDM)</summary>
+                            <p class="price__info--text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                        </details>
+                        <details class="price__info">
+                            <summary class="price__info--title">TANGO (POLYJET)</summary>
+                            <p class="price__info--text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                        </details>
+                        <details class="price__info">
+                            <summary class="price__info--title">VERO WHITE (POLYJET)</summary>
+                            <p class="price__info--text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                        </details>
+                        <details class="price__info">
+                            <summary class="price__info--title">VERO CLEAR (POLYJET)</summary>
+                            <p class="price__info--text">ABS-пластик - ударопрочная техническая опластическая смола на основ сополимера крилонитрила с бутадиеном и стиролом.</p>
+                        </details>                            
+                    </div>                                                   
                 </section>
-                <section>
-                    <h4>Шаг 1 из 3</h4>
-                    <p>Кликните, чтобы прикрепить 3D модель или фото</p>
-                    <p>Допустимые расширения:</p>
-                    <p>.jpg, .jpeg, .png, .gif, .pdf, .psd, .ai, .max, .cdr, .3ds, .stl, .igs, .model, .mxp, .obj, .wrl, .3dm, .fbx, .matpart, .matamx, .zip, .rar, .7z, .skp, .dae, .ply, .magics, .mgx, .x3d, .x3dv, .3mf, .stp, .step, .prt, .zpr</p>
-                    <p>Максимальный размер файла:<span>10 Мб</span></p>
-                    <p>Или добавьте ссылку на макет в облаке (Dropbox, Mega, Google Drive и т.п.)</p>
-                    <button>Назад</button>
-                    <button>Далее</button>
+                <section class="steps">                                                                                         
+                    <div class="order">
+                        <div class="order__wrapper">                              
+                            <form class="order__form">
+                                <h4 class="order__title">Шаг 1 из 3</h4>
+                                <div class="order__indicates">
+                                    <span class="order__indicates--step"></span>                        
+                                    <span class="order__indicates--step"></span>
+                                    <span class="order__indicates--step"></span>
+                                </div>   
+                                <div class="order-layout"> 
+                                    <label class="order-layout__label">                                
+                                        <span class="order-layout__title">Кликните, чтобы прикрепить 3D модель или фото</span>
+                                        <input type="file">
+                                    </label>                                                                         
+                                    <p class="order-layout__paragraph">Допустимые расширения:</p>
+                                    <p class="order-layout__paragraph">.jpg, .jpeg, .png, .gif, .pdf, .psd, .ai, .max, .cdr, .3ds, .stl, .igs, .model, .mxp, .obj, .wrl, .3dm, .fbx, .matpart, .matamx, .zip, .rar, .7z, .skp, .dae, .ply, .magics, .mgx, .x3d, .x3dv, .3mf, .stp, .step, .prt, .zpr</p>
+                                    <p class="order-layout__paragraph">Максимальный размер файла:<span>10 Мб</span></p>                        
+                                    <label for="fname">Или добавьте ссылку на макет в облаке (Dropbox, Mega, Google Drive и т.п.)</label> 
+                                    <input type="text" id="fname" name="fname">
+                                </div> 
+                                <div class="order-figure">Введите данные фигуры
+
+
+
+                                </div> 
+                                <div class="order-reg">
+                                    
+
+                                </div>
+                                <div class="order-thank">
+                                    
+
+                                </div>  
+                                <div> 
+                                    <div>                                              
+                                        <button class="order__step-button" type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+                                        <button class="order__step-button" type="button" id="nextBtn" onclick="nextPrev(1)">Далее</button>                                        
+                                    </div> 
+                                </div>                                    
+                            </form>
+                        </div> 
+                    </div>   
                 </section>
                 <section>
                     <h2>Остались вопросы?</h2>

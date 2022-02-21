@@ -1,0 +1,149 @@
+@media (max-width:768px) {
+    .price__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 59px;
+        margin-top: 350px;
+        margin-bottom:64px;
+        max-width: 310px;        
+    } 
+    .title__3d--price {
+        border-bottom: none;
+    }                
+    .price__matirials {
+        max-width: 470px;
+        background: #F1F5F8;
+        box-shadow: 0px 4px 68px rgba(33, 33, 33, 0.06);
+        border-radius: 35px; 
+        padding: 44px 40px;
+    }
+    .price__matirials a {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .price__matirials a:hover {
+        color: #FB8C00;
+        border-bottom: 3 solid #FB8C00;
+        padding-bottom: 5px;
+        text-decoration: underline;
+    }
+    .price__matirials-block {
+        margin-bottom: 32px;
+    }
+    .matirials {
+        padding-right: 32px;        
+    }    
+    .price__info {
+        border-bottom: 3px solid rgba(180, 187, 206, 0.3);
+        padding-bottom: 16px;
+            &--title {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    padding-top: 16px;
+                    padding-bottom: 10px;
+                    cursor: pointer;
+                }
+            &--title::after {
+                content: '\002B';
+                font-weight: bold;
+                float: right;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 140%;
+            }
+            &--title.active {
+                color: #2F80ED;
+            }
+            &--title.active::after {
+                content: "\2212";
+            }
+    
+            &--title:hover {
+                color: #2F80ED;
+            }
+            &--text {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+            }
+    }
+    .active {
+      color: #2F80ED;
+    }  
+}
+@media (min-width:769px) {
+    .price__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 59px;
+        margin-top: 350px;
+        margin-bottom:64px;        
+    } 
+    .title__3d--price {
+        border-bottom: none;
+    }                
+    .price__matirials {
+        max-width: 470px;
+        background: #F1F5F8;
+        box-shadow: 0px 4px 68px rgba(33, 33, 33, 0.06);
+        border-radius: 35px; 
+        padding: 44px 40px;
+    }
+    .price__matirials a {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .price__matirials a:hover {
+        color: #FB8C00;
+        border-bottom: 3 solid #FB8C00;
+        padding-bottom: 5px;
+        text-decoration: underline;
+    }
+    .price__matirials-block {
+        margin-bottom: 32px;
+    }
+    .matirials {
+        padding-right: 32px;        
+    }    
+    .price__info {
+        border-bottom: 3px solid rgba(180, 187, 206, 0.3);
+        padding-bottom: 16px;
+            &--title {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    padding-top: 16px;
+                    padding-bottom: 10px;
+                    cursor: pointer;
+                }
+            &--title::after {
+                content: '\002B';
+                font-weight: bold;
+                float: right;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 140%;
+            }
+            &--title.active {
+                color: #2F80ED;
+            }
+            &--title.active::after {
+                content: "\2212";
+            }
+    
+            &--title:hover {
+                color: #2F80ED;
+            }
+            &--text {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+            }
+    }
+    .active {
+      color: #2F80ED;
+    }   
+}
